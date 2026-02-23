@@ -28,9 +28,16 @@ public class main {
         }
         System.out.println("=============================================");
         System.out.println("getting particular product");
-        Product p = service.getProduct("macbook pro");
+        Product p = service.getProduct("shelf");
         System.out.println(p);
 
+        //searching particular text
+        System.out.println("=============================================");
+        System.out.println("getting particular text: ");
+        List<Product> prods= service.getProductText("brown");
+        for (Product product:prods){
+            System.out.println(product);
+        }
 
 
     }
